@@ -1,8 +1,4 @@
-
-markdown
-Copy
-Edit
-# 🚀 Kubernetes Cluster Setup Automation
+# 🚀 Kubernetes Cluster Setup Automation By Sheroon Mohammad
 
 ![Kubernetes](https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png)
 
