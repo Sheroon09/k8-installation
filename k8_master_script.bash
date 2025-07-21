@@ -64,23 +64,4 @@ apt-get update
 sudo apt-get install -y kubelet=1.30.3-1.1 kubeadm=1.30.3-1.1 kubectl=1.30.3-1.1 --allow-change-held-packages
 apt-mark hold kubelet kubeadm kubectl
 
-echo "➡️  Initializing Kubernetes cluster..."
-kubeadm init
-
-echo "➡️  Setting up kubeconfig for user: $USER"
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
-export KUBECONFIG=$HOME/.kube/config
-
-echo "➡️  Checking node status..."
-kubectl get nodes
-
-echo "➡️  Installing Weave Net CNI plugin..."
-kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
-
-echo "➡️  Final cluster node status:"
-kubectl get nodes -o wide
-
 echo "✅ Kubernetes master node is up and running!"
