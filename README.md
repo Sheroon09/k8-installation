@@ -68,23 +68,32 @@ Run this exact command on each worker node to join the cluster.
 
 🖼️ Architecture Diagram
 
+<img width="1024" height="698" alt="image" src="https://github.com/user-attachments/assets/8eba039b-5420-4221-8e13-42fcbf543f18" />
+
+
 🔧 Useful Commands
-Check node status:
 
-kubectl get nodes
-Check pods status:
+    Check node status:
+    
+    **kubectl get nodes -o wide**
 
-kubectl get pods -A
+    Check pods status:
+
+      **kubectl get pods -A**
+
+      
 📜 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 🙌 Contributing
+
 Feel free to fork this repo, create issues or pull requests. Your contributions are welcome!
 
 📚 References
-Kubernetes Official Docs
-https://kubernetes.io/docs/home/
-**Containerd Docs**
-https://containerd.io/docs/
-**Weave Net CNI**
-https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
+
+- [`Kubernetes Official Docs`](https://kubernetes.io/docs/home/)
+
+- [`Containerd Docs`](https://containerd.io/docs/)
+  
+- [`Weave Net CNI`](https://www.weave.works/docs/net/latest/kubernetes/kube-addon/)
