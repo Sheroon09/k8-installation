@@ -45,19 +45,19 @@ This repository contains automation scripts to **prepare Ubuntu nodes and initia
 - [`k8_master_worker_preq_script.bash`](https://github.com/Sheroon09/k8-installation/blob/main/k8_master_worker_preq_script.bash)
 - [`k8_master.bash`](https://github.com/Sheroon09/k8-installation/blob/main/k8_master.bash)
 
-
 ### 1. Prepare all nodes (master and workers)
-
 
 chmod +x k8_master_worker_preq_script.bash
 sudo ./k8_master_worker_preq_script.bash
-2. Initialize the master node
+
+### 2. Initialize the master node
 
 chmod +x k8_master.bash
 sudo ./k8_master.bash
 This will initialize the Kubernetes control-plane and deploy Weave Net CNI.
 
-3. Join worker nodes to the cluster
+### 3. Join worker nodes to the cluster
+
 On the master node, generate the join command:
 
 kubeadm token create $(kubeadm token generate) --print-join-command
