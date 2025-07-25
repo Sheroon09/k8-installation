@@ -9,6 +9,7 @@
 
 ---
 
+
 ## 📋 Overview
 
 This repository contains automation scripts to **prepare Ubuntu nodes and initialize a Kubernetes cluster** with version **1.30.3**.
