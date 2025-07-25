@@ -81,6 +81,9 @@ Run this exact command on each worker node to join the cluster.
 
       **kubectl get pods -A**
 
+    To Run the Sample pod with CLI:
+    
+    **kubectl run nginx --image=nginx**
       
 📜 License
 
